@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Restaurant Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="search-bar">
+                <img src="image/search 1.png" alt="Search Icon" class="search-icon">
+                <input type="text" placeholder="Search Food Item">
+            </div>
+            <div class="auth-buttons">
+                <button class="signup">Signup</button>
+                <button class="login">Login</button>
+            </div>
+            <div class="logo">
+                <img src="image/s-logo.png" alt="Chef Logo" class="chef-logo">
+            </div>
+        </header>
+
+        <aside class="sidebar">
+            <div class="restaurant-info">
+                <img src="image/L-logo.png" alt="Chef Logo" class="chef-logo">
+                <h2>Your Restaurant Menu</h2>
+                <p>Your Slogan</p>
+            </div>
+            <nav class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Your Orders</a></li>
+                    <li><a href="#">Wallet</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+            <div class="more-about-us">
+                <h3>More About Us</h3>
+                <ul>
+                    <li><a href="#">Our blog</a></li>
+                    <li><a href="#">Upcoming Dishes</a></li>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Social Media Links</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="content">
+            <section class="hero-section">
+                <img src="image/homepage.png"  alt="Weekend Special Delicious Food Menu">
+                
+            </section>
+
+            <section class="menu-items">
+                <h2>Menu</h2>
+                <div class="food-grid" id="food-grid">
+                    </div>
+
+                <div class="order-process-section">
+                    <button id="order-button" class="place-order-button">Place New Order</button>
+                    <div id="order-status" class="order-status-message"></div>
+                    <div id="ordered-items-display" class="ordered-items-box">
+                        <h3>Your Current Order:</h3>
+                        <ul id="order-list">
+                            <li>No order placed yet.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
