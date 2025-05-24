@@ -1,24 +1,24 @@
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
-    background-color: #1a1a1a; /* Dark background */
+    background-color: #1a1a1a; 
     color: #fff;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Align to the top */
+    align-items: flex-start; 
     min-height: 100vh;
-    padding: 20px; /* Add some padding around the container */
-    box-sizing: border-box; /* Include padding in element's total width and height */
+    padding: 20px; 
+    box-sizing: border-box; 
 }
 
 .container {
     display: grid;
-    grid-template-columns: 280px 1fr; /* Sidebar width and content width */
-    grid-template-rows: auto 1fr; /* Header height and content height */
+    grid-template-columns: 280px 1fr; 
+    grid-template-rows: auto 1fr; 
     gap: 20px;
     width: 100%;
-    max-width: 1400px; /* Max width for your layout */
-    background-color: #000; /* Main container background */
+    max-width: 1400px;
+    background-color: #000; 
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 12px;
@@ -61,7 +61,7 @@ header {
 
 
 .auth-buttons button {
-    background-color: #ff4500; /* Orange color */
+    background-color: #ff4500;
     color: #fff;
     border: none;
     padding: 10px 22px;
@@ -89,7 +89,7 @@ header {
 
 /* Sidebar Styles */
 .sidebar {
-    grid-row: 1 / 3; /* Spans header and content rows */
+    grid-row: 1 / 3; 
     background-color: #0d0d0d;
     padding: 20px;
     border-radius: 10px;
@@ -198,14 +198,14 @@ header {
 }
 
 .food-item {
-    background-color: #0d0d0d;
+    background-color: #0d0d0d;   
     border-radius: 10px;
     overflow: hidden;
     text-align: center;
     padding-bottom: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    position: relative; /* For button positioning */
+    position: relative; 
 }
 
 .food-item:hover {
@@ -231,7 +231,7 @@ header {
     font-size: 1.2em;
     font-weight: 600;
     color: #fff;
-    margin-bottom: 20px; /* Space for the button */
+    margin-bottom: 20px; 
 }
 
 .food-item .add-to-cart {
@@ -244,8 +244,8 @@ header {
     font-size: 2em;
     line-height: 1;
     cursor: pointer;
-    position: absolute; /* Position relative to .food-item */
-    bottom: -25px; /* Half outside the card */
+    position: absolute; 
+    bottom: -25px; 
     left: 50%;
     transform: translateX(-50%);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
@@ -271,7 +271,7 @@ header {
 }
 
 .place-order-button {
-    background-color: #28a745; /* Green color for order button */
+    background-color: #28a745;
     color: #fff;
     border: none;
     padding: 15px 30px;
@@ -298,7 +298,7 @@ header {
     font-size: 1.3em;
     color: #ff4500;
     font-weight: 600;
-    min-height: 1.5em; /* Prevent layout shift */
+    min-height: 1.5em;
 }
 
 .ordered-items-box {
@@ -372,7 +372,7 @@ header {
 
 @media (max-width: 768px) {
     .container {
-        grid-template-columns: 1fr; /* Stack sidebar and content */
+        grid-template-columns: 1fr;
         grid-template-rows: auto auto 1fr;
         padding: 15px;
         gap: 15px;
@@ -396,10 +396,10 @@ header {
         flex-grow: 1;
     }
     .sidebar {
-        grid-row: 2 / 3; /* Sidebar below header */
+        grid-row: 2 / 3;
     }
     .content {
-        grid-row: 3 / 4; /* Content below sidebar */
+        grid-row: 3 / 4; 
         grid-column: 1 / 2;
     }
     .hero-section {
@@ -412,7 +412,7 @@ header {
         font-size: 1.4em;
     }
     .delivery-info, .discount {
-        position: static; /* Remove absolute positioning */
+        position: static;
         margin-top: 15px;
         display: block;
         text-align: center;
@@ -435,6 +435,6 @@ header {
         margin-top: 0;
     }
     .food-grid {
-        grid-template-columns: 1fr; /* Single column on small screens */
+        grid-template-columns: 1fr; 
     }
 }
